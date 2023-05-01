@@ -6,7 +6,7 @@ module.exports = async (req, res) => {
     try {
         const usuario = await admin.auth().createUser({
             uid: rut,
-            displayName: nombre + apellido,
+            displayName: nombre + ' ' + apellido,
             email,
             password: contrasena,
         });
