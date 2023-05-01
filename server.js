@@ -6,11 +6,7 @@ fastify.get('/', async (request, reply) => {
   return { hello: 'world' }
 })
 
-fastify.post('/registro', async (request, reply) => {
-    // request.query - datos desde GET
-    const datos = request.body;
-    return {datos};
-})
+fastify.post('/registro', require('./src/registro.js'));
 
 // Run the server!
 const start = async () => {
