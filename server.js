@@ -10,6 +10,7 @@ fastify.get('/', async (request, reply) => {
 })
 
 fastify.post('/registro', require('./src/registro.js'));
+fastify.post('/inicio-sesion', require('./src/inicio-sesion.js'));
 
 // Run the server!
 const start = async () => {
