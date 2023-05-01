@@ -19,7 +19,7 @@ admin.initializeApp({
 });
 
 /* EXPORTAR */
-module.exports({
+module.exports = {
     app,
     admin
-})
+};
