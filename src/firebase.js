@@ -12,7 +12,7 @@ const app = initializeApp(firebaseConfig);
 
 /* CONFIG FIREBASE-ADMIN */
 var admin = require("firebase-admin");
-var serviceAccount = require("./medialert-eb516-firebase-adminsdk-dc4ee-f8083fa006.json");
+var serviceAccount = require("./serviceAccountKey.json");
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   storageBucket: "medialert-eb516.appspot.com",
